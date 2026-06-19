@@ -24,6 +24,20 @@ export default function decorate(block) {
     slide.setAttribute('aria-label', `Slide ${i + 1} of ${slides.length}`);
     slide.setAttribute('aria-hidden', i !== 0);
     if (i === 0) slide.classList.add('active');
+
+    // separate the image (background) from the text (overlay).
+    // EDS may wrap loose content in a <p>, so query by type rather than by sibling.
+    const cell = slide.firstElementChild || slide;
+    const picture = cell.querySelector('picture');
+    const content = document.createElement('div');
+    content.className = 'hero-carousel-content';
+    cell.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((h) => content.append(h));
+    cell.querySelectorAll('p').forEach((p) => {
+      if (p.querySelector('a') && !p.querySelector('picture')) content.append(p);
+    });
+    cell.textContent = '';
+    if (picture) cell.append(picture);
+    cell.append(content);
   });
 
   const track = document.createElement('div');
