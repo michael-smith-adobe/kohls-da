@@ -1,1 +1,22 @@
 /* add global styles that can be loaded post LCP here */
+
+/* sponsored promo banner */
+.sponsored-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  background-color: #cfe8f5;
+  border-radius: 4px;
+  text-align: center;
+  font-size: var(--body-font-size-s);
+}
+
+.sponsored-banner a {
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
