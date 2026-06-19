@@ -35,3 +35,52 @@
     padding: 40px 32px;
   }
 }
+
+/* banner variant: text overlay on a full-bleed lifestyle image */
+.hero.banner {
+  min-height: 600px;
+  padding: 0;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+}
+
+.hero.banner picture {
+  z-index: -1;
+}
+
+.hero.banner img {
+  object-position: center right;
+}
+
+.hero.banner > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero.banner h1 {
+  color: var(--text-color);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 700;
+  line-height: 1.05;
+  max-width: 480px;
+  margin: 0 0 24px;
+}
+
+.hero.banner a {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (width >= 900px) {
+  .hero.banner > div {
+    padding: 48px 32px;
+  }
+}
