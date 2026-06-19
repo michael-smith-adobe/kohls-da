@@ -89,23 +89,40 @@
 }
 
 .hero-carousel .hero-carousel-prev::before {
-  content: '\25C0';
-  font-size: 12px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid currentcolor;
 }
 
 .hero-carousel .hero-carousel-next::before {
-  content: '\25B6';
-  font-size: 12px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentcolor;
 }
 
+/* pause icon: two vertical bars drawn with borders */
 .hero-carousel .hero-carousel-playpause[data-state="playing"]::before {
-  content: '\23F8';
-  font-size: 16px;
+  content: '';
+  width: 8px;
+  height: 11px;
+  border-left: 3px solid currentcolor;
+  border-right: 3px solid currentcolor;
 }
 
+/* play icon: right-pointing triangle drawn with borders */
 .hero-carousel .hero-carousel-playpause[data-state="paused"]::before {
-  content: '\25B6';
-  font-size: 14px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid currentcolor;
 }
 
 .hero-carousel .hero-carousel-dots {

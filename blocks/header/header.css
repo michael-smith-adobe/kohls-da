@@ -153,6 +153,17 @@ header nav .nav-brand img {
   height: auto;
 }
 
+/* tools list (Kohl's) */
+header nav .nav-tools ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  font-size: var(--body-font-size-xs);
+  font-weight: 500;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
@@ -269,4 +280,88 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* allow header to grow to natural height (logo row + category nav row) */
+@media (width >= 900px) {
+  header,
+  header .header,
+  header .header.block {
+    height: auto;
+  }
+
+  header nav {
+    height: auto;
+  }
+}
+
+/* --- Kohl's brand styling --- */
+header nav .nav-brand .nav-brand-link,
+header nav .nav-brand a {
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  color: #c8102e;
+  text-decoration: none;
+}
+
+header nav .nav-brand a:hover {
+  text-decoration: none;
+}
+
+/* search field */
+header nav .nav-search {
+  flex: 1 1 auto;
+}
+
+header nav .nav-search input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: var(--body-font-size-xs);
+}
+
+@media (width >= 900px) {
+  header nav .nav-brand {
+    flex: 0 0 auto;
+    margin-right: 24px;
+  }
+
+  header nav .nav-search {
+    max-width: 580px;
+  }
+}
+
+@media (width >= 900px) {
+  /* category nav as its own full-width row under the top bar */
+  header nav {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+  }
+
+  header nav .nav-sections {
+    order: 3;
+    flex-basis: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 8px;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul {
+    flex-wrap: nowrap;
+    gap: 14px;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  header nav .nav-sections ul > li:first-child > a {
+    color: #c8102e;
+    font-weight: 700;
+  }
 }

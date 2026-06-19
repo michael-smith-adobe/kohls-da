@@ -1,8 +1,14 @@
+/* full-width light-grey band behind the promo row */
+.promo-bar-container {
+  background-color: #f6f6f6;
+}
+
 .promo-bar {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
+  padding: 16px 0;
 }
 
 .promo-bar .promo-bar-intro {
@@ -31,11 +37,12 @@
 }
 
 .promo-bar .promo-bar-offer {
-  border: 1px solid #767676;
+  border: 1px solid #c7c7c7;
   border-radius: 4px;
   padding: 14px 18px;
   font-size: var(--body-font-size-xs);
   line-height: 1.4;
+  background-color: var(--background-color);
 }
 
 .promo-bar .promo-bar-offer p:first-child {
