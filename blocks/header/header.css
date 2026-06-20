@@ -398,6 +398,34 @@ header nav .nav-ask .nav-ask-btn:hover {
     align-items: center;
   }
 
+  /* utility row: sits between top bar and category nav */
+  header nav .nav-utility {
+    order: 2;
+    flex-basis: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 8px;
+    font-size: 13px;
+  }
+
+  header nav .nav-utility .default-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav .nav-utility ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav .nav-utility a {
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
   header nav .nav-sections {
     order: 3;
     flex-basis: 100%;
@@ -416,5 +444,14 @@ header nav .nav-ask .nav-ask-btn:hover {
   header nav .nav-sections ul > li:first-child > a {
     color: #c8102e;
     font-weight: 700;
+  }
+
+  /* inline brand marks (BabiesRUs, Sephora) within category links */
+  header nav .nav-sections ul > li a img {
+    display: inline-block;
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 4px;
   }
 }
