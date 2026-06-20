@@ -24,8 +24,14 @@
   padding: 0;
 }
 
+/* DA renders items as `<li><picture><img></picture>Label</li>` with NO anchor,
+   so the li itself must be the inline-flex row that aligns icon + text. */
 .nav-utility .nav-utility-group li {
   margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
 }
 
 .nav-utility .nav-utility-group a {
