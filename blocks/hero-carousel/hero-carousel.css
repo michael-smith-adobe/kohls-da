@@ -36,9 +36,7 @@ main > .section.hero-carousel-container > .hero-carousel-wrapper {
 .hero-carousel .hero-carousel-slide .hero-carousel-content {
   position: absolute;
   inset: 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 48px 24px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
