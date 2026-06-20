@@ -39,7 +39,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: none;
     padding: 0 32px;
   }
 
@@ -441,6 +441,14 @@ header nav .nav-ask .nav-ask-btn:hover {
     font-weight: 500;
   }
 
+  /* keep category label + inline brand mark on one line */
+  header nav .nav-sections ul > li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
   header nav .nav-sections ul > li:first-child > a {
     color: #c8102e;
     font-weight: 700;
@@ -452,6 +460,5 @@ header nav .nav-ask .nav-ask-btn:hover {
     height: 16px;
     width: auto;
     vertical-align: middle;
-    margin-left: 4px;
   }
 }
