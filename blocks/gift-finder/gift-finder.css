@@ -1,0 +1,61 @@
+.gift-finder .gift-finder-head {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.gift-finder .gift-finder-head h2 {
+  font-size: var(--heading-font-size-l);
+  margin: 0 0 8px;
+}
+
+.gift-finder .gift-finder-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gift-finder .gift-finder-tab {
+  display: inline-block;
+  border: 1px solid #c8102e;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: var(--body-font-size-xs);
+  font-weight: 600;
+  color: #c8102e;
+}
+
+.gift-finder .gift-finder-tab:hover {
+  background-color: #c8102e;
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.gift-finder .gift-finder-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gift-finder .gift-finder-card {
+  font-size: var(--body-font-size-xs);
+  line-height: 1.4;
+}
+
+.gift-finder .gift-finder-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gift-finder .gift-finder-card p {
+  margin: 6px 0 0;
+}
+
+@media (width >= 900px) {
+  .gift-finder .gift-finder-cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

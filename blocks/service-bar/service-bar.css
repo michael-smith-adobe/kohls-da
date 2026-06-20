@@ -1,0 +1,38 @@
+.service-bar-container {
+  background-color: #fbf6ee;
+}
+
+.service-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+}
+
+.service-bar .service-bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: var(--body-font-size-xs);
+  text-align: center;
+}
+
+.service-bar .service-bar-item p {
+  margin: 0;
+}
+
+.service-bar .service-bar-item a {
+  color: var(--link-color);
+  font-weight: 600;
+}
+
+@media (width >= 900px) {
+  .service-bar {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
