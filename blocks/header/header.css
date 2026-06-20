@@ -164,26 +164,6 @@ header nav .nav-tools ul {
   font-weight: 500;
 }
 
-/* utility row base styling (applies at all widths) */
-header nav .nav-utility ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav .nav-utility a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--text-color);
-  font-weight: 500;
-}
-
-header nav .nav-utility a img {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 auto;
-}
 
 /* sections */
 header nav .nav-sections {
@@ -414,24 +394,12 @@ header nav .nav-ask .nav-ask-btn:hover {
     align-items: center;
   }
 
-  /* utility row: sits between top bar and category nav */
-  header nav .nav-utility {
+  /* utility row: full-width band between top bar and category nav */
+  header nav .nav-utility-wrapper {
     order: 2;
     flex-basis: 100%;
     border-top: 1px solid #e5e5e5;
     padding-top: 8px;
-    font-size: 13px;
-  }
-
-  header nav .nav-utility .default-content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav .nav-utility ul {
-    display: flex;
-    gap: 28px;
   }
 
   header nav .nav-sections {
