@@ -187,6 +187,10 @@ header nav .nav-sections ul {
 
 header nav .nav-sections ul > li {
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -317,15 +321,16 @@ header nav .nav-tools ul li a {
   line-height: 1.2;
 }
 
-/* keep category label + inline brand mark on one line (all widths) */
-header nav .nav-sections ul > li a {
+/* keep category label + inline brand mark on one line (all widths).
+   DA renders brand-mark items as `<li>Baby | <picture><img></picture></li>`
+   with NO anchor, so target the li/picture/img directly. */
+header nav .nav-sections ul > li picture {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  white-space: nowrap;
+  line-height: 0;
 }
 
-header nav .nav-sections ul > li a img {
+header nav .nav-sections ul > li img {
   display: inline-block;
   height: 16px;
   width: auto;
