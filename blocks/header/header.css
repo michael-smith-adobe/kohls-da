@@ -395,8 +395,9 @@ header nav .nav-ask .nav-ask-btn:hover {
   }
 
   header nav .search {
-    flex: 1 1 auto;
-    max-width: 560px;
+    flex: 1 1 768px;
+    width: 768px;
+    max-width: 768px;
   }
 
   header nav .nav-tools {
