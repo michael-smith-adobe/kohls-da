@@ -164,6 +164,27 @@ header nav .nav-tools ul {
   font-weight: 500;
 }
 
+/* utility row base styling (applies at all widths) */
+header nav .nav-utility ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .nav-utility a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+header nav .nav-utility a img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
@@ -411,23 +432,6 @@ header nav .nav-ask .nav-ask-btn:hover {
   header nav .nav-utility ul {
     display: flex;
     gap: 28px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  header nav .nav-utility a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--text-color);
-    font-weight: 500;
-  }
-
-  header nav .nav-utility a img {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 auto;
   }
 
   header nav .nav-sections {
