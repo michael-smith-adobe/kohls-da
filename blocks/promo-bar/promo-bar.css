@@ -37,6 +37,8 @@
 }
 
 .promo-bar .promo-bar-offer {
+  height: 76px;
+  box-sizing: border-box;
   border: 1px solid #767676;
   border-radius: 6px;
   padding: 12px 16px;
