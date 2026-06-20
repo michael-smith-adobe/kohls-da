@@ -1,8 +1,8 @@
-/* break the hero-carousel out of the section's max-width to span full viewport */
+/* widen the hero-carousel beyond the body content, but not full viewport */
 main > .section.hero-carousel-container > .hero-carousel-wrapper {
-  max-width: none;
+  max-width: 1600px;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -32,7 +32,7 @@ main > .section.hero-carousel-container > .hero-carousel-wrapper {
   height: auto;
 }
 
-/* optional text overlay inside a slide */
+/* optional text overlay inside a slide — pinned top-left */
 .hero-carousel .hero-carousel-slide .hero-carousel-content {
   position: absolute;
   inset: 0;
@@ -41,7 +41,8 @@ main > .section.hero-carousel-container > .hero-carousel-wrapper {
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   box-sizing: border-box;
   pointer-events: none;
 }
