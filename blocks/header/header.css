@@ -321,17 +321,8 @@ header nav .nav-brand a:hover {
 }
 
 /* search field */
-header nav .nav-search {
+header nav .search {
   flex: 1 1 auto;
-}
-
-header nav .nav-search input {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #767676;
-  border-radius: 4px;
-  padding: 11px 16px;
-  font-size: var(--body-font-size-xs);
 }
 
 /* Ask Kohl's pill button */
@@ -366,19 +357,23 @@ header nav .nav-ask .nav-ask-btn:hover {
   header nav .nav-brand {
     flex: 1 1 auto;
     margin-right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   header nav .nav-brand .default-content-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex: 0 0 auto;
   }
 
   header nav .nav-brand p {
     margin: 0;
   }
 
-  header nav .nav-search {
+  header nav .search {
     flex: 1 1 auto;
     max-width: 560px;
   }
@@ -422,8 +417,17 @@ header nav .nav-ask .nav-ask-btn:hover {
   }
 
   header nav .nav-utility a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: var(--text-color);
     font-weight: 500;
+  }
+
+  header nav .nav-utility a img {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
   }
 
   header nav .nav-sections {
