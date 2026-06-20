@@ -1,14 +1,12 @@
-.service-bar-container {
-  background-color: #fbf6ee;
-}
-
 .service-bar {
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
   justify-content: center;
-  padding: 14px 0;
+  padding: 14px 24px;
+  background-color: #fbf6ee;
+  border-radius: 6px;
 }
 
 .service-bar .service-bar-item {
