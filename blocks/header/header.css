@@ -317,6 +317,21 @@ header nav .nav-tools ul li a {
   line-height: 1.2;
 }
 
+/* keep category label + inline brand mark on one line (all widths) */
+header nav .nav-sections ul > li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+header nav .nav-sections ul > li a img {
+  display: inline-block;
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+}
+
 header nav .nav-brand a:hover {
   text-decoration: none;
 }
@@ -422,24 +437,8 @@ header nav .nav-ask .nav-ask-btn:hover {
     flex: 0 0 auto;
   }
 
-  /* keep category label + inline brand mark on one line */
-  header nav .nav-sections ul > li a {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    white-space: nowrap;
-  }
-
   header nav .nav-sections ul > li:first-child > a {
     color: #c8102e;
     font-weight: 700;
-  }
-
-  /* inline brand marks (BabiesRUs, Sephora) within category links */
-  header nav .nav-sections ul > li a img {
-    display: inline-block;
-    height: 16px;
-    width: auto;
-    vertical-align: middle;
   }
 }
