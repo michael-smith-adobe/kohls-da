@@ -395,7 +395,7 @@ header nav .nav-ask .nav-ask-btn:hover {
   }
 
   /* utility row: full-width band between top bar and category nav */
-  header nav .nav-utility-wrapper {
+  header nav .nav-utility-container {
     order: 2;
     flex-basis: 100%;
     border-top: 1px solid #e5e5e5;
