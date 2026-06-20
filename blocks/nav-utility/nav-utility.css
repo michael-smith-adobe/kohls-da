@@ -41,8 +41,19 @@
   text-decoration: underline;
 }
 
-.nav-utility .nav-utility-group a img {
-  width: 18px;
+/* DA wraps icons in <picture> and may leave them outside the <a>, so target
+   the picture/img directly and constrain by height (keep aspect ratio). */
+.nav-utility .nav-utility-group picture {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  flex: 0 0 auto;
+}
+
+.nav-utility .nav-utility-group img {
+  display: inline-block;
   height: 18px;
+  width: auto;
+  vertical-align: middle;
   flex: 0 0 auto;
 }
