@@ -301,8 +301,17 @@ header nav .nav-tools {
   }
 }
 
-/* --- Kohl's brand styling --- */
-/* Logo lives in the FIRST default-content-wrapper of the brand area.
+/* tools as spaced icon-style links */
+header nav .nav-tools ul li a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* --- Kohl's brand styling ---
+   Logo lives in the FIRST default-content-wrapper of the brand area.
    DA strips custom classes, so scope by position rather than .nav-brand-link. */
 header nav .nav-brand .default-content-wrapper:first-child a {
   font-family: var(--heading-font-family);
@@ -336,15 +345,6 @@ header nav .nav-brand .default-content-wrapper:last-child a::before {
 header nav .nav-brand .default-content-wrapper:last-child a:hover {
   background-color: #fbeaed;
   text-decoration: none;
-}
-
-/* tools as spaced icon-style links */
-header nav .nav-tools ul li a {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.2;
 }
 
 /* keep category label + inline brand mark on one line (all widths).
