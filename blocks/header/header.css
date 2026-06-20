@@ -435,10 +435,15 @@ header nav .nav-ask .nav-ask-btn:hover {
 
   header nav .nav-sections .default-content-wrapper > ul {
     flex-wrap: nowrap;
-    gap: 14px;
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: flex-start;
     font-size: 13px;
     font-weight: 500;
+  }
+
+  /* prevent items from shrinking so labels + brand marks stay on one line */
+  header nav .nav-sections .default-content-wrapper > ul > li {
+    flex: 0 0 auto;
   }
 
   /* keep category label + inline brand mark on one line */
