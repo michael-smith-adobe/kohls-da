@@ -21,11 +21,16 @@
 }
 
 .gift-finder .gift-finder-tabs {
+  margin-bottom: 24px;
+}
+
+/* the tab links sit inside a wrapped <p>, so make that the flex row */
+.gift-finder .gift-finder-tabs p {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  margin-bottom: 24px;
+  margin: 0;
 }
 
 .gift-finder .gift-finder-tab {
